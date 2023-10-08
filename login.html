@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- //two scripting language -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" /> -->
+
+    <title>Login page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <!-- <img src="images/Logo.jpeg" -->
+                    <!-- style="width: 185px;" alt="logo"> -->
+                  <h4 class="mt-1 mb-5 pb-1">Register As Administrator</h4>
+                </div>
+
+                <form>
+                  <p>Please login to your account</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example11" class="form-control"
+                      placeholder="Email Id" />
+                    <label class="form-label" for="form2Example11">Email Id</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Password</label>
+                  </div>
+
+                 <div class="text-center pt-1 mb-5 pb-1">
+                <a href="workers.html"    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                      in</button></a>
+                    <a class="text-muted" href="#!">Forgot password?</a>
+                  </div>
+<!-- <input type="submit" value="Login" class="submit-btn" onclick="auth()" /> -->
+
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">BMC Officer Portal</h4>
+                <h6>Instructions for user login:<br>
+                1. Please follow the process given below .<br><br>
+                    Enter valid User Id or verified mobile number.<br>
+Enter valid Password.<br>
+password is case sensitive.<br>
+Click on Login button.<br><br>
+2. Once you login with valid credential , you will be redirected to your Dashboard , where multiple action can be done.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <script>
+function auth(){
+  var phone = String(document.getElementById("form2Example11").value);
+  var password =String( document.getElementById("form2Example22").value);
+  if(phone == "admin@gmail.com" && password=="admin"){
+  window.location.assign("workers.html");
+    alert("login successfully")
+  }
+  else{
+    alert("Invalid Information");
+    return;
+  }
+
+}
+
+</script> -->
+
+</body>
+</html>

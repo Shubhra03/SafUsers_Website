@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Post Details</title>
+  </head>
+  <style>
+    body {
+    background-image: url("https://englishnews.reporterstoday.com/wp-content/uploads/2020/02/clean-min.jpg");
+  }
+  h1{
+    margin:5px;
+    background:color:rgb(212, 229, 224);
+  }
+
+    div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+   margin: 10px;
+  background-color:rgb(212, 229, 224);
+}
+img {
+width: 100px;
+height: auto;
+border-radius: 8px;
+
+padding-left: 80px;
+padding-right: 80px;
+
+}
+span{
+  padding-left: 80px;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+  <body>
+
+        <h1>Post Details</h1>
+
+      <div class="content">
+
+        <form id="add-post-form">
+            <input type="text" name="username" placeholder="username">
+            <input type="text" name="trashSize" placeholder="trashSize">
+            <button>Add post</button>
+        </form>
+
+        <ul id="post-list"></ul>
+
+    </div>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyDwP1cztRI5lYGA6GXoe587yU9kI65fQ98",
+    authDomain: "safuser-84c5e.firebaseapp.com",
+    projectId: "safuser-84c5e",
+    storageBucket: "safuser-84c5e.appspot.com",
+    messagingSenderId: "966597819506",
+    appId: "1:966597819506:web:86cd59fdee8234b6f816eb",
+    measurementId: "G-5NDK5XQZ24"
+        }
+        firebase.initializeApp(config);
+           const db = firebase.firestore();
+           db.settings({ timestampsInSnapshots: true });
+       </script>
+       <script src="app.js"></script>
+  </body>
+</html>
