@@ -1,4 +1,6 @@
-# SafUsers_Website -This is the website to ease the use of users and it also has admin portal that verifies the status of every record
+# SafUsers_Website -
+This is the website to ease the use of users and it also has admin portal that verifies the status of every record
+
 for admin details - Click on login 
 username-admin@gmail.com   
 password - admin
